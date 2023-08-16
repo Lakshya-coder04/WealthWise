@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --primary-color: #0e2a47;
+  --secondary-color: rgb(100, 128, 156);
+  --black: #222;
+  --white: #faf9f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+.nav {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background: var(--primary-color);
+  transition: 0.6s;
+}
+
+.nav.sticky {
+  background: var(--secondary-color);
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.6s;
+}
+.nav.sticky a:hover {
+  color: var(--primary-color);
+}
+.logo {
+  width: 90px;
+  height: auto;
+  mix-blend-mode: normal;
+  transition: 0.6s;
+}
+
+.nav-items {
+  /* width: 500px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+.nav-items li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.6s ease-in;
+}
+.nav-items a:hover {
+  color: var(--secondary-color);
+  transition: 0.3s ease-in;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger i {
+  color: #e5edf1;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#bars {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* hero section  */
+.hero {
+  color: var(--white);
+  max-width: 100%;
+  height: 100vh;
+  background: url(img/StockChart.svg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  padding: 10px 20px;
+  /* new changes  */
+  padding-top: 80px;
+}
+
+.intro {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.intro h3 {
+  margin-bottom: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.intro h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.intro-2 {
+  text-align: center;
+}
+
+.intro-2 h1 {
+  margin-bottom: 20px;
+  letter-spacing: 1.3px;
+}
+
+.intro-2 p {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.container {
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h1 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  line-height: 60px;
+}
+
+.underline-effect {
+  border-bottom: 1px solid rgba(100, 128, 156, 0.5);
+  opacity: 0.7;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.underline-effect:hover {
+  border-bottom: 2px solid rgba(100, 128, 156, 1);
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+
+.hero-2 {
+  height: auto;
+  background: var(--primary-color);
+  color: var(--white);
+  margin: 40px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-2 h1 {
+  border-bottom: 2px solid var(--white);
+  font-weight: bold;
+  font-size: 45px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero-2 p {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+.why-us {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+.why-us p {
+  margin: 10px 0;
+}
+
+.why-us h1 {
+  font-size: 40px;
+  font-weight: 900;
+  width: fit-content;
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.details {
+  text-align: center;
+}
+
+.details h1 {
+  padding-top: 10px;
+}
+
+.card-1 {
+  height: 200px;
+  background: url(services/online-marketing-1246457_1280.jpg) no-repeat
+    center/cover;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.6);
+}
+.card-2 {
+  height: 200px;
+  background: url(services/web-design-3411373_1280.jpg) no-repeat center
+    center/cover;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.6);
+}
+.card-3 {
+  height: 200px;
+  background: url(services/search-engine-optimization-4111000_1280.jpg)
+    no-repeat center center/cover;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.6);
+}
+.card-4 {
+  height: 200px;
+  background: url(services/Mobile-First-Design-Why-Its-Vital-for-Your-Website3.jpg)
+    no-repeat center center/cover;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.6);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form h1 {
+  color: var(--white);
+  width: fit-content;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--white);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(54, 54, 54, 0.3);
+  width: 100%; /* Form takes full width */
+  max-width: 1400px; /* Maximum width for larger screens */
+}
+
+label {
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+  width: 50%;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  color: var(--white);
+  width: 50%;
+  padding: 8px 0;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: var(--white);
+  color: var(--primary-color);
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+textarea::placeholder {
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.3;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type='submit']:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s ease-in;
+}
+
+.copyright {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Thank you page styles  STARTS*/
+.thank-you {
+  padding: 10px 20px;
+  margin: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.thank-you p {
+  font: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Thank you page styles  ENDS */
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 0px 20px;
+  }
+
+  .nav-items {
+    margin-top: 5px;
+    padding: 10px 0;
+    height: 40vh;
+    position: fixed;
+    right: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+  .nav-item {
+    margin: 2px 0;
+  }
+  .nav-items li a {
+    padding: 3px 10px;
+    color: #fff;
+  }
+  .nav-items a:hover {
+    transition: 0.3s ease-in;
+    color: var(--primary-color);
+  }
+
+  .nav-items.active {
+    right: 0;
+    transition: 0.3s ease-in;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .intro h1 {
+    font-size: 20px;
+  }
+  .intro-2 p {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .about-us h1 {
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  .about-us h2 {
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    /* margin-bottom: 10px; */
+    line-height: 35px;
+  }
+
+  .hero-2 h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .hero-2 p {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+
+  .why-us h1 {
+    font-size: 24px;
+  }
+
+  .service-cards {
+    max-width: 900px;
+  }
+  .details h1 {
+    font-size: 24px;
+    font-weight: 200;
+    color: var(--black);
+  }
+
+  form {
+    padding: 15px;
+    max-width: 100%; /* Maximum width for larger screens */
+  }
+
+  form h1 {
+    font-size: 24px;
+  }
+
+  .thank-you h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .thank-you p {
+    font: 10px;
+  }
+}
