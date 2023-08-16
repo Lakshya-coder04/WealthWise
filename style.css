@@ -6,6 +6,9 @@
   --black: #222;
   --white: #faf9f6;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;

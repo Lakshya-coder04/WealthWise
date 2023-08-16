@@ -18,10 +18,9 @@
         <nav class="nav">
             <a class="logo" href="./index.html"><img class="logo" src="img/WW-removebg-preview.png" srcset=""></a>
             <ul class="nav-items">
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#about">About Us</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a target="_self" href="#why-us">Services</a></li>
+                <li class="nav-item"><a target="_self" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a target="_self" href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <i id="bars" onclick="toggleMode()" class="fa-solid fa-bars"></i>
@@ -43,7 +42,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="about-us" class="container">
         <div class="about-us">
             <h1><span class="underline-effect">Our Story and vision</span>
             </h1>
@@ -61,12 +60,12 @@
         </p>
     </div>
 
-    <div class="why-us">
+    <div id="why-us" class="why-us">
         <p>Why choose WealthWise Creations</p>
         <h1>How we can help you</h1>
     </div>
 
-    <div class="service-cards">
+    <div id="service-cards" class="service-cards">
         <div class="details">
 
             <div class="card-1">
@@ -94,7 +93,7 @@
     </div>
 
 
-    <div class="form-container">
+    <div id="contact" class="form-container">
 
         <form action="https://formsubmit.co/wealthwisecreations@gmail.com" method="POST">
             <h1>Let's Connect</h1>
