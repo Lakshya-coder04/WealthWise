@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-  width: 180px;
+  width: 150px;
   height: auto;
   mix-blend-mode: luminosity;
   transition: 0.6s;
