@@ -42,13 +42,15 @@ body {
   right: 0;
   transition: 0.6s;
 }
+
 .nav.sticky a:hover {
   color: var(--primary-color);
 }
+
 .logo {
-  width: 90px;
+  width: 250px;
   height: auto;
-  mix-blend-mode: normal;
+  mix-blend-mode: luminosity;
   transition: 0.6s;
 }
 
