@@ -294,7 +294,7 @@ form {
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(54, 54, 54, 0.3);
   width: 100%; /* Form takes full width */
-  max-width: 1400px; /* Maximum width for larger screens */
+  /* max-width: 1400px; Maximum width for larger screens */
 }
 
 label {
@@ -497,4 +497,7 @@ footer {
   .thank-you p {
     font: 10px;
   }
+}
+
+@media only screen and (max-width: 1200px) {
 }
